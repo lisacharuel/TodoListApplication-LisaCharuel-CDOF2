@@ -58,7 +58,7 @@ if __name__ == "__main__":
     # Change the title
     root.title('To-Do List App')
     # Change the window size
-    root.geometry("250x450")
+    root.geometry("300x500")
     # no resize for both directions
     root.resizable(False, False)
 
@@ -96,13 +96,13 @@ if __name__ == "__main__":
     listUpdate()
 
     # Place geometry
-    lbl_title.place(x=60, y=5)
+    lbl_title.place(x=70, y=5)
     lbl_task_show.place(x=70, y=45)
     txt_input.place(x=10, y=80)
-    btn_add_task.place(x=50, y=115)
-    btn_del_one.place(x=50, y=145)
-    btn_del_all.place(x=50, y=175)
-    btn_exit.place(x=50, y=205)
+    btn_add_task.place(x=70, y=115)
+    btn_del_one.place(x=70, y=145)
+    btn_del_all.place(x=70, y=175)
+    btn_exit.place(x=70, y=205)
     lb_tasks.place(x=12, y=240)
 
     # start mainloop
