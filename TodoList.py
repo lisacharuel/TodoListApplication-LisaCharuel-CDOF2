@@ -8,6 +8,7 @@ def addTask():
     if len(word) == 0:
         messagebox.showinfo('Empty Entry', 'Enter task name')
     else:
+        task.append(word)
         cur.execute('insert into tasks values (?)', (word,))
         listUpdate()
         txt_input.delete(0, 'end')
