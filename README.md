@@ -21,5 +21,8 @@ For this To-Do List App, we’ll be using the tkinter library to create the grap
 Save the TodoList.py file and run it using your terminal, or using the run icon in Visual Studio Code.
 A simple window should appear with an input field and four buttons. Enter tasks into the input field and click the “Add Task” button to populate the list. Your basic To-Do List App is now up and running! You can then add other tasks, delete them if you want to or if they have been completed, and finally you can exit the interface.
 
+### **Licence**
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
 
 
