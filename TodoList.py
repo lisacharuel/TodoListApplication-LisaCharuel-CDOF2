@@ -31,15 +31,6 @@ def delOne():
         messagebox.showinfo('Cannot Delete', 'No Task Item Selected')
 
 
-def deleteAll():
-    mb = messagebox.askyesno('Delete All', 'Are you sure?')
-    if mb == True:
-        while(len(task) != 0):
-            task.pop()
-        cur.execute('delete from tasks')
-        listUpdate()
-
-
 def clearList():
     lb_tasks.delete(0, 'end')
 
@@ -49,6 +40,15 @@ def retrieveDB():
         task.pop()
     for row in cur.execute('select title from tasks'):
         task.append(row[0])
+
+
+def deleteAll():
+    mb = messagebox.askyesno('Delete All', 'Are you sure you want to delete all the tasks?')
+    if mb == True:
+        while(len(task) != 0):
+            task.pop()
+        cur.execute('delete from tasks')
+        listUpdate()
 
 
 # Driver Code
